@@ -12,6 +12,13 @@
 		1B3751431EB1D1CF00CFDBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3751421EB1D1CF00CFDBC7 /* Assets.xcassets */; };
 		1B3751461EB1D1CF00CFDBC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3751441EB1D1CF00CFDBC7 /* LaunchScreen.storyboard */; };
 		1B3751511EB1D1CF00CFDBC7 /* Lottery_APPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3751501EB1D1CF00CFDBC7 /* Lottery_APPUITests.m */; };
+		1B738FC91EB1DCD800FE6812 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FC81EB1DCD800FE6812 /* TabBarController.m */; };
+		1B738FCC1EB1DE7B00FE6812 /* ArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FCB1EB1DE7B00FE6812 /* ArenaViewController.m */; };
+		1B738FCF1EB1DEA800FE6812 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FCE1EB1DEA800FE6812 /* DiscoverViewController.m */; };
+		1B738FD21EB1DECE00FE6812 /* HallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FD11EB1DECE00FE6812 /* HallViewController.m */; };
+		1B738FD51EB1DEEB00FE6812 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FD41EB1DEEB00FE6812 /* HistoryViewController.m */; };
+		1B738FD81EB1DF1600FE6812 /* MyLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FD71EB1DF1600FE6812 /* MyLotteryViewController.m */; };
+		1B738FDB1EB1E3AC00FE6812 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FDA1EB1E3AC00FE6812 /* TabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,20 @@
 		1B37514C1EB1D1CF00CFDBC7 /* Lottery APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lottery APPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3751501EB1D1CF00CFDBC7 /* Lottery_APPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lottery_APPUITests.m; sourceTree = "<group>"; };
 		1B3751521EB1D1CF00CFDBC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B738FC71EB1DCD800FE6812 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		1B738FC81EB1DCD800FE6812 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		1B738FCA1EB1DE7B00FE6812 /* ArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArenaViewController.h; sourceTree = "<group>"; };
+		1B738FCB1EB1DE7B00FE6812 /* ArenaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArenaViewController.m; sourceTree = "<group>"; };
+		1B738FCD1EB1DEA800FE6812 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		1B738FCE1EB1DEA800FE6812 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		1B738FD01EB1DECE00FE6812 /* HallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallViewController.h; sourceTree = "<group>"; };
+		1B738FD11EB1DECE00FE6812 /* HallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallViewController.m; sourceTree = "<group>"; };
+		1B738FD31EB1DEEB00FE6812 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		1B738FD41EB1DEEB00FE6812 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		1B738FD61EB1DF1600FE6812 /* MyLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLotteryViewController.h; sourceTree = "<group>"; };
+		1B738FD71EB1DF1600FE6812 /* MyLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLotteryViewController.m; sourceTree = "<group>"; };
+		1B738FD91EB1E3AC00FE6812 /* TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBar.h; sourceTree = "<group>"; };
+		1B738FDA1EB1E3AC00FE6812 /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +150,8 @@
 		1B37515D1EB1D2EC00CFDBC7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B738FCA1EB1DE7B00FE6812 /* ArenaViewController.h */,
+				1B738FCB1EB1DE7B00FE6812 /* ArenaViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,6 +183,8 @@
 		1B3751611EB1D2EC00CFDBC7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B738FCD1EB1DEA800FE6812 /* DiscoverViewController.h */,
+				1B738FCE1EB1DEA800FE6812 /* DiscoverViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +216,8 @@
 		1B3751651EB1D2EC00CFDBC7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B738FD01EB1DECE00FE6812 /* HallViewController.h */,
+				1B738FD11EB1DECE00FE6812 /* HallViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,6 +249,8 @@
 		1B3751691EB1D2EC00CFDBC7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B738FD31EB1DEEB00FE6812 /* HistoryViewController.h */,
+				1B738FD41EB1DEEB00FE6812 /* HistoryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -253,6 +282,8 @@
 		1B37516D1EB1D2EC00CFDBC7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B738FC71EB1DCD800FE6812 /* TabBarController.h */,
+				1B738FC81EB1DCD800FE6812 /* TabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,6 +298,8 @@
 		1B37516F1EB1D2EC00CFDBC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1B738FD91EB1E3AC00FE6812 /* TabBar.h */,
+				1B738FDA1EB1E3AC00FE6812 /* TabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,6 +317,8 @@
 		1B3751711EB1D2EC00CFDBC7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B738FD61EB1DF1600FE6812 /* MyLotteryViewController.h */,
+				1B738FD71EB1DF1600FE6812 /* MyLotteryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -444,7 +479,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B738FDB1EB1E3AC00FE6812 /* TabBar.m in Sources */,
+				1B738FCF1EB1DEA800FE6812 /* DiscoverViewController.m in Sources */,
+				1B738FD21EB1DECE00FE6812 /* HallViewController.m in Sources */,
+				1B738FC91EB1DCD800FE6812 /* TabBarController.m in Sources */,
 				1B37513B1EB1D1CF00CFDBC7 /* AppDelegate.m in Sources */,
+				1B738FD81EB1DF1600FE6812 /* MyLotteryViewController.m in Sources */,
+				1B738FCC1EB1DE7B00FE6812 /* ArenaViewController.m in Sources */,
+				1B738FD51EB1DEEB00FE6812 /* HistoryViewController.m in Sources */,
 				1B3751381EB1D1CF00CFDBC7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,6 +676,7 @@
 				1B3751571EB1D1CF00CFDBC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B3751581EB1D1CF00CFDBC7 /* Build configuration list for PBXNativeTarget "Lottery APPUITests" */ = {
 			isa = XCConfigurationList;
@@ -642,6 +685,7 @@
 				1B37515A1EB1D1CF00CFDBC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
