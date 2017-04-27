@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1B3751381EB1D1CF00CFDBC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3751371EB1D1CF00CFDBC7 /* main.m */; };
 		1B37513B1EB1D1CF00CFDBC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B37513A1EB1D1CF00CFDBC7 /* AppDelegate.m */; };
-		1B37513E1EB1D1CF00CFDBC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B37513D1EB1D1CF00CFDBC7 /* ViewController.m */; };
-		1B3751411EB1D1CF00CFDBC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B37513F1EB1D1CF00CFDBC7 /* Main.storyboard */; };
 		1B3751431EB1D1CF00CFDBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3751421EB1D1CF00CFDBC7 /* Assets.xcassets */; };
 		1B3751461EB1D1CF00CFDBC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3751441EB1D1CF00CFDBC7 /* LaunchScreen.storyboard */; };
 		1B3751511EB1D1CF00CFDBC7 /* Lottery_APPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3751501EB1D1CF00CFDBC7 /* Lottery_APPUITests.m */; };
@@ -28,12 +26,9 @@
 
 /* Begin PBXFileReference section */
 		1B3751331EB1D1CF00CFDBC7 /* Lottery APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lottery APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B3751371EB1D1CF00CFDBC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B3751371EB1D1CF00CFDBC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		1B3751391EB1D1CF00CFDBC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
 		1B37513A1EB1D1CF00CFDBC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
-		1B37513C1EB1D1CF00CFDBC7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1B37513D1EB1D1CF00CFDBC7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1B3751401EB1D1CF00CFDBC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B3751421EB1D1CF00CFDBC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B3751451EB1D1CF00CFDBC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B3751471EB1D1CF00CFDBC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,12 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				1B37515B1EB1D2EC00CFDBC7 /* Class */,
-				1B37513C1EB1D1CF00CFDBC7 /* ViewController.h */,
-				1B37513D1EB1D1CF00CFDBC7 /* ViewController.m */,
-				1B37513F1EB1D1CF00CFDBC7 /* Main.storyboard */,
 				1B3751421EB1D1CF00CFDBC7 /* Assets.xcassets */,
 				1B3751441EB1D1CF00CFDBC7 /* LaunchScreen.storyboard */,
-				1B3751471EB1D1CF00CFDBC7 /* Info.plist */,
 				1B3751361EB1D1CF00CFDBC7 /* Supporting Files */,
 			);
 			path = "Lottery APP";
@@ -96,7 +87,7 @@
 		1B3751361EB1D1CF00CFDBC7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1B3751371EB1D1CF00CFDBC7 /* main.m */,
+				1B3751471EB1D1CF00CFDBC7 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -345,6 +336,7 @@
 		1B3751781EB1D2EC00CFDBC7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				1B3751371EB1D1CF00CFDBC7 /* main.m */,
 				1B3751391EB1D1CF00CFDBC7 /* AppDelegate.h */,
 				1B37513A1EB1D1CF00CFDBC7 /* AppDelegate.m */,
 			);
@@ -435,7 +427,6 @@
 			files = (
 				1B3751461EB1D1CF00CFDBC7 /* LaunchScreen.storyboard in Resources */,
 				1B3751431EB1D1CF00CFDBC7 /* Assets.xcassets in Resources */,
-				1B3751411EB1D1CF00CFDBC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +444,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B37513E1EB1D1CF00CFDBC7 /* ViewController.m in Sources */,
 				1B37513B1EB1D1CF00CFDBC7 /* AppDelegate.m in Sources */,
 				1B3751381EB1D1CF00CFDBC7 /* main.m in Sources */,
 			);
@@ -478,14 +468,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1B37513F1EB1D1CF00CFDBC7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B3751401EB1D1CF00CFDBC7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1B3751441EB1D1CF00CFDBC7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -589,7 +571,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Lottery APP/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "XM.Lottery-APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -600,7 +584,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Lottery APP/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "XM.Lottery-APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
