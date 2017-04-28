@@ -19,6 +19,7 @@
 		1B738FD51EB1DEEB00FE6812 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FD41EB1DEEB00FE6812 /* HistoryViewController.m */; };
 		1B738FD81EB1DF1600FE6812 /* MyLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FD71EB1DF1600FE6812 /* MyLotteryViewController.m */; };
 		1B738FDB1EB1E3AC00FE6812 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FDA1EB1E3AC00FE6812 /* TabBar.m */; };
+		1B738FDE1EB1EB5A00FE6812 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FDD1EB1EB5A00FE6812 /* NavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		1B738FD71EB1DF1600FE6812 /* MyLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLotteryViewController.m; sourceTree = "<group>"; };
 		1B738FD91EB1E3AC00FE6812 /* TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBar.h; sourceTree = "<group>"; };
 		1B738FDA1EB1E3AC00FE6812 /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
+		1B738FDC1EB1EB5A00FE6812 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		1B738FDD1EB1EB5A00FE6812 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +287,8 @@
 			children = (
 				1B738FC71EB1DCD800FE6812 /* TabBarController.h */,
 				1B738FC81EB1DCD800FE6812 /* TabBarController.m */,
+				1B738FDC1EB1EB5A00FE6812 /* NavigationController.h */,
+				1B738FDD1EB1EB5A00FE6812 /* NavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -486,6 +491,7 @@
 				1B37513B1EB1D1CF00CFDBC7 /* AppDelegate.m in Sources */,
 				1B738FD81EB1DF1600FE6812 /* MyLotteryViewController.m in Sources */,
 				1B738FCC1EB1DE7B00FE6812 /* ArenaViewController.m in Sources */,
+				1B738FDE1EB1EB5A00FE6812 /* NavigationController.m in Sources */,
 				1B738FD51EB1DEEB00FE6812 /* HistoryViewController.m in Sources */,
 				1B3751381EB1D1CF00CFDBC7 /* main.m in Sources */,
 			);

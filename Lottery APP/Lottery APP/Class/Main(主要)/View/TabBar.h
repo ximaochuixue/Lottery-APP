@@ -8,9 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class TabBar;
+@protocol TabBarDelegate <NSObject>
+
+@optional
+-(void)tabBar:(TabBar *)tabBar didClickBtn:(NSInteger)index;
+
+@end
+
+
 @interface TabBar : UIView
 
-
+// UITabBarItem的模型数组
 @property (nonatomic,strong) NSArray *items;
+
+@property (nonatomic,weak) id<TabBarDelegate> delegate;
 
 @end

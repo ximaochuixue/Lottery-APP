@@ -1,26 +1,29 @@
 //
-//  MyLotteryViewController.m
+//  NavigationController.m
 //  Lottery APP
 //
 //  Created by 希毛吹雪 on 2017/4/27.
 //  Copyright © 2017年 希毛吹雪. All rights reserved.
 //
 
-#import "MyLotteryViewController.h"
+#import "NavigationController.h"
 
-@interface MyLotteryViewController ()
+@interface NavigationController ()
 
 @end
 
-@implementation MyLotteryViewController
+@implementation NavigationController
+
+
++(void)initialize{
+    UINavigationBar *bar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[UIView class]]];
+    
+    [bar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.navigationItem.title = @"我的彩票";
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {

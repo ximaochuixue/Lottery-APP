@@ -15,8 +15,9 @@
 #import "HallViewController.h"
 #import "HistoryViewController.h"
 #import "MyLotteryViewController.h"
+#import "NavigationController.h"
 
-@interface TabBarController ()
+@interface TabBarController ()<TabBarDelegate>
 
 @property(nonatomic,strong) NSMutableArray *items;
 
@@ -45,15 +46,14 @@
 }
 
 -(void) setUpAllChildViewController{
+    HallViewController *hall = [[HallViewController alloc] init];
+    [self setUponechildViewController:hall image:[UIImage imageNamed:@"TabBar_LotteryHall_new"] selImage:[UIImage imageNamed:@"TabBar_LotteryHall_selected_new"]];
     
     ArenaViewController *arena = [[ArenaViewController alloc] init];
     [self setUponechildViewController:arena image:[UIImage imageNamed:@"TabBar_Arena_new"] selImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"]];
     
     DiscoverViewController *discover = [[DiscoverViewController alloc] init];
     [self setUponechildViewController:discover image:[UIImage imageNamed:@"TabBar_Discovery_new"] selImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"]];
-    
-    HallViewController *hall = [[HallViewController alloc] init];
-    [self setUponechildViewController:hall image:[UIImage imageNamed:@"TabBar_LotteryHall_new"] selImage:[UIImage imageNamed:@"TabBar_LotteryHall_selected_new"]];
     
     HistoryViewController *history = [[HistoryViewController alloc] init];
     [self setUponechildViewController:history image:[UIImage imageNamed:@"TabBar_History_new"] selImage:[UIImage imageNamed:@"TabBar_History_selected_new"]];
@@ -69,9 +69,13 @@
     
     [self.items addObject:vc.tabBarItem];
     
-    vc.view.backgroundColor = [UIColor redColor];
-    [self addChildViewController:vc];
+    vc.view.backgroundColor = [UIColor blueColor];
+    
+    NavigationController *nav = [[NavigationController alloc]initWithRootViewController:vc];
+    
+    [self addChildViewController:nav];
 }
+
 
 -(void)setUpTabBar{
     
@@ -81,14 +85,18 @@
     
     tabBar.items = self.items;
     
-    tabBar.backgroundColor = [UIColor blueColor];
+    tabBar.delegate = self;
     
     tabBar.frame = self.tabBar.frame;
     
     [self.view addSubview:tabBar];
 }
 
-
+-(void)tabBar:(TabBar *)tabBar didClickBtn:(NSInteger)index{
+    
+    self.selectedIndex = index;
+//    NSLog(@"%ld",index);
+}
 
 
 

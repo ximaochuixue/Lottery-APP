@@ -8,7 +8,15 @@
 
 #import "TabBar.h"
 
+
+@interface TabBar()
+
+@property (nonatomic,weak) UIButton *selButton;
+
+@end
+
 @implementation TabBar
+
 
 -(void)setItems:(NSArray *)items{
     
@@ -19,11 +27,33 @@
         
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         
+        btn.tag = self.subviews.count;
+        
         [btn setBackgroundImage:item.image forState:UIControlStateNormal];
         
         [btn setBackgroundImage:item.selectedImage forState:UIControlStateSelected];
         
+        [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];
+        
         [self addSubview:btn];
+        
+        if (self.subviews.count == 1) {
+            [self btnClick:btn];
+        }
+    }
+}
+
+-(void)btnClick:(UIButton *)button{
+    _selButton.selected = NO;
+    
+    button.selected = YES;
+    
+    _selButton = button;
+    
+    // 通知tabBarVc切换控制器
+    if ([_delegate respondsToSelector:@selector(tabBar:didClickBtn:)]) {
+        [_delegate tabBar:self didClickBtn:button.tag];
+//        NSLog(@"%ld",(long)button.tag);
     }
 }
 
@@ -39,7 +69,7 @@
     
     for (int i=0; i<count; i++) {
         UIButton *btn = self.subviews[i];
-        x = i*w;
+        x = i * w;
         btn.frame = CGRectMake(x, y, w, h);
     }
 }
