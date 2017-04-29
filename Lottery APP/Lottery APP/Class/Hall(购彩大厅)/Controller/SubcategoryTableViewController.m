@@ -1,73 +1,59 @@
 //
-//  HallViewController.m
+//  SubcategoryTableViewController.m
 //  Lottery APP
 //
-//  Created by 希毛吹雪 on 2017/4/27.
+//  Created by 希毛吹雪 on 2017/4/29.
 //  Copyright © 2017年 希毛吹雪. All rights reserved.
 //
 
-#import "HallViewController.h"
-#import "ActiveController.h"
+#import "SubcategoryTableViewController.h"
 
-@interface HallViewController ()
+@interface SubcategoryTableViewController ()
+
+@property (nonatomic,strong) NSArray *subcategories;
 
 @end
 
-@implementation HallViewController
-
-
-#pragma mark 点击活动
--(void)didActive{
-    ActiveController *active = [[ActiveController alloc] init];
-    [self.navigationController pushViewController:active animated:YES];
-}
-
+@implementation SubcategoryTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"购彩大厅";
-    
-    UIImage *image = [UIImage imageNamed:@"CS50_activity_image"];
-    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(didActive)];
-    
-    
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"subcategory"];
 }
+
+-(void)categoryViewController:(CategoryTableViewController *)categoryViewController didSelectSubcategories:(NSArray *)subcategories{
+    
+    self.subcategories = subcategories;
+    [self.tableView reloadData];
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+    return self.subcategories.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"subcategory" forIndexPath:indexPath];
+    
+    cell.textLabel.text = self.subcategories[indexPath.row];
+    
+    return cell;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
 
 /*
 // Override to support conditional editing of the table view.

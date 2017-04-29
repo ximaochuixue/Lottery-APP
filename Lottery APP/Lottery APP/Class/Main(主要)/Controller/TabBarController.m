@@ -60,6 +60,7 @@
     
     MyLotteryViewController *mylottery = [[MyLotteryViewController alloc] init];
     [self setUponechildViewController:mylottery image:[UIImage imageNamed:@"TabBar_MyLottery_new"] selImage:[UIImage imageNamed:@"TabBar_MyLottery_selected_new"]];
+    mylottery.view.backgroundColor = [UIColor whiteColor];
     
 }
 

@@ -20,6 +20,12 @@
 		1B738FD81EB1DF1600FE6812 /* MyLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FD71EB1DF1600FE6812 /* MyLotteryViewController.m */; };
 		1B738FDB1EB1E3AC00FE6812 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FDA1EB1E3AC00FE6812 /* TabBar.m */; };
 		1B738FDE1EB1EB5A00FE6812 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FDD1EB1EB5A00FE6812 /* NavigationController.m */; };
+		1B9940E81EB464B600622024 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9940E71EB464B600622024 /* LoginController.m */; };
+		1B9940EB1EB483DA00622024 /* ActiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9940EA1EB483DA00622024 /* ActiveController.m */; };
+		1B9940EF1EB4853200622024 /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9940EE1EB4853200622024 /* CategoryTableViewController.m */; };
+		1B9940F21EB4855000622024 /* SubcategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9940F11EB4855000622024 /* SubcategoryTableViewController.m */; };
+		1B9940F41EB48DC600622024 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B9940F31EB48DC600622024 /* categories.plist */; };
+		1B9940F71EB48E6F00622024 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9940F61EB48E6F00622024 /* Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,17 @@
 		1B738FDA1EB1E3AC00FE6812 /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
 		1B738FDC1EB1EB5A00FE6812 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		1B738FDD1EB1EB5A00FE6812 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		1B9940E61EB464B600622024 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		1B9940E71EB464B600622024 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		1B9940E91EB483DA00622024 /* ActiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveController.h; sourceTree = "<group>"; };
+		1B9940EA1EB483DA00622024 /* ActiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveController.m; sourceTree = "<group>"; };
+		1B9940ED1EB4853200622024 /* CategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewController.h; sourceTree = "<group>"; };
+		1B9940EE1EB4853200622024 /* CategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewController.m; sourceTree = "<group>"; };
+		1B9940F01EB4855000622024 /* SubcategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubcategoryTableViewController.h; sourceTree = "<group>"; };
+		1B9940F11EB4855000622024 /* SubcategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubcategoryTableViewController.m; sourceTree = "<group>"; };
+		1B9940F31EB48DC600622024 /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = categories.plist; path = ../../categories.plist; sourceTree = "<group>"; };
+		1B9940F51EB48E6F00622024 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		1B9940F61EB48E6F00622024 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,8 +236,11 @@
 		1B3751651EB1D2EC00CFDBC7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B9940EC1EB484FC00622024 /* Active */,
 				1B738FD01EB1DECE00FE6812 /* HallViewController.h */,
 				1B738FD11EB1DECE00FE6812 /* HallViewController.m */,
+				1B9940E91EB483DA00622024 /* ActiveController.h */,
+				1B9940EA1EB483DA00622024 /* ActiveController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -324,6 +344,8 @@
 			children = (
 				1B738FD61EB1DF1600FE6812 /* MyLotteryViewController.h */,
 				1B738FD71EB1DF1600FE6812 /* MyLotteryViewController.m */,
+				1B9940E61EB464B600622024 /* LoginController.h */,
+				1B9940E71EB464B600622024 /* LoginController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -376,11 +398,25 @@
 		1B3751781EB1D2EC00CFDBC7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				1B9940F31EB48DC600622024 /* categories.plist */,
 				1B3751371EB1D1CF00CFDBC7 /* main.m */,
 				1B3751391EB1D1CF00CFDBC7 /* AppDelegate.h */,
 				1B37513A1EB1D1CF00CFDBC7 /* AppDelegate.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		1B9940EC1EB484FC00622024 /* Active */ = {
+			isa = PBXGroup;
+			children = (
+				1B9940ED1EB4853200622024 /* CategoryTableViewController.h */,
+				1B9940EE1EB4853200622024 /* CategoryTableViewController.m */,
+				1B9940F01EB4855000622024 /* SubcategoryTableViewController.h */,
+				1B9940F11EB4855000622024 /* SubcategoryTableViewController.m */,
+				1B9940F51EB48E6F00622024 /* Category.h */,
+				1B9940F61EB48E6F00622024 /* Category.m */,
+			);
+			name = Active;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,6 +503,7 @@
 			files = (
 				1B3751461EB1D1CF00CFDBC7 /* LaunchScreen.storyboard in Resources */,
 				1B3751431EB1D1CF00CFDBC7 /* Assets.xcassets in Resources */,
+				1B9940F41EB48DC600622024 /* categories.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,13 +522,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B738FDB1EB1E3AC00FE6812 /* TabBar.m in Sources */,
+				1B9940E81EB464B600622024 /* LoginController.m in Sources */,
+				1B9940F21EB4855000622024 /* SubcategoryTableViewController.m in Sources */,
 				1B738FCF1EB1DEA800FE6812 /* DiscoverViewController.m in Sources */,
 				1B738FD21EB1DECE00FE6812 /* HallViewController.m in Sources */,
 				1B738FC91EB1DCD800FE6812 /* TabBarController.m in Sources */,
 				1B37513B1EB1D1CF00CFDBC7 /* AppDelegate.m in Sources */,
+				1B9940F71EB48E6F00622024 /* Category.m in Sources */,
 				1B738FD81EB1DF1600FE6812 /* MyLotteryViewController.m in Sources */,
 				1B738FCC1EB1DE7B00FE6812 /* ArenaViewController.m in Sources */,
 				1B738FDE1EB1EB5A00FE6812 /* NavigationController.m in Sources */,
+				1B9940EB1EB483DA00622024 /* ActiveController.m in Sources */,
+				1B9940EF1EB4853200622024 /* CategoryTableViewController.m in Sources */,
 				1B738FD51EB1DEEB00FE6812 /* HistoryViewController.m in Sources */,
 				1B3751381EB1D1CF00CFDBC7 /* main.m in Sources */,
 			);
