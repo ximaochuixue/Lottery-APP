@@ -42,6 +42,8 @@
     
     cell.textLabel.text = self.subcategories[indexPath.row];
     
+    cell.textLabel.font = [UIFont systemFontOfSize:15];
+    
     return cell;
 }
 

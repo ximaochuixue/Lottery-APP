@@ -66,9 +66,11 @@
     
     cell.imageView.highlightedImage = [UIImage imageNamed:c.highlighted_icon];
     
-    cell.textLabel.highlightedTextColor = [UIColor greenColor];
+    cell.textLabel.highlightedTextColor = [UIColor blueColor];
     
     cell.textLabel.text = c.name;
+    
+    cell.textLabel.font = [UIFont systemFontOfSize:15];
     
 //    NSLog(@"%@",cell.textLabel.text);
     

@@ -20,6 +20,12 @@
 		1B738FD81EB1DF1600FE6812 /* MyLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FD71EB1DF1600FE6812 /* MyLotteryViewController.m */; };
 		1B738FDB1EB1E3AC00FE6812 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FDA1EB1E3AC00FE6812 /* TabBar.m */; };
 		1B738FDE1EB1EB5A00FE6812 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FDD1EB1EB5A00FE6812 /* NavigationController.m */; };
+		1B7C3BFE1EBA1995009A9251 /* updateTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C3BFD1EBA1995009A9251 /* updateTabbar.m */; };
+		1B7C3C011EBA204B009A9251 /* settingViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C3C001EBA204B009A9251 /* settingViewCell.m */; };
+		1B80EE9F1EB9D19400D88C9E /* NewCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80EE9E1EB9D19400D88C9E /* NewCollectionController.m */; };
+		1B80EEA71EB9F8A100D88C9E /* settingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80EEA61EB9F8A100D88C9E /* settingItem.m */; };
+		1B80EEAA1EB9F8B300D88C9E /* settingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80EEA91EB9F8B300D88C9E /* settingGroup.m */; };
+		1B80EEAD1EBA019E00D88C9E /* SettingTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80EEAC1EBA019E00D88C9E /* SettingTableController.m */; };
 		1B9940E81EB464B600622024 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9940E71EB464B600622024 /* LoginController.m */; };
 		1B9940EB1EB483DA00622024 /* ActiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9940EA1EB483DA00622024 /* ActiveController.m */; };
 		1B9940EF1EB4853200622024 /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9940EE1EB4853200622024 /* CategoryTableViewController.m */; };
@@ -65,6 +71,18 @@
 		1B738FDA1EB1E3AC00FE6812 /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
 		1B738FDC1EB1EB5A00FE6812 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		1B738FDD1EB1EB5A00FE6812 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		1B7C3BFC1EBA1995009A9251 /* updateTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = updateTabbar.h; sourceTree = "<group>"; };
+		1B7C3BFD1EBA1995009A9251 /* updateTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = updateTabbar.m; sourceTree = "<group>"; };
+		1B7C3BFF1EBA204B009A9251 /* settingViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingViewCell.h; sourceTree = "<group>"; };
+		1B7C3C001EBA204B009A9251 /* settingViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingViewCell.m; sourceTree = "<group>"; };
+		1B80EE9D1EB9D19400D88C9E /* NewCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCollectionController.h; sourceTree = "<group>"; };
+		1B80EE9E1EB9D19400D88C9E /* NewCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCollectionController.m; sourceTree = "<group>"; };
+		1B80EEA51EB9F8A100D88C9E /* settingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingItem.h; sourceTree = "<group>"; };
+		1B80EEA61EB9F8A100D88C9E /* settingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingItem.m; sourceTree = "<group>"; };
+		1B80EEA81EB9F8B300D88C9E /* settingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingGroup.h; sourceTree = "<group>"; };
+		1B80EEA91EB9F8B300D88C9E /* settingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingGroup.m; sourceTree = "<group>"; };
+		1B80EEAB1EBA019E00D88C9E /* SettingTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableController.h; sourceTree = "<group>"; };
+		1B80EEAC1EBA019E00D88C9E /* SettingTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableController.m; sourceTree = "<group>"; };
 		1B9940E61EB464B600622024 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		1B9940E71EB464B600622024 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		1B9940E91EB483DA00622024 /* ActiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveController.h; sourceTree = "<group>"; };
@@ -145,6 +163,7 @@
 		1B37515B1EB1D2EC00CFDBC7 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				1B80EEA11EB9F79400D88C9E /* Setting(设置) */,
 				1B37515C1EB1D2EC00CFDBC7 /* Arena(竞技场) */,
 				1B3751601EB1D2EC00CFDBC7 /* Discover(发现) */,
 				1B3751641EB1D2EC00CFDBC7 /* Hall(购彩大厅) */,
@@ -377,6 +396,8 @@
 		1B3751751EB1D2EC00CFDBC7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B80EE9D1EB9D19400D88C9E /* NewCollectionController.h */,
+				1B80EE9E1EB9D19400D88C9E /* NewCollectionController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -402,8 +423,49 @@
 				1B3751371EB1D1CF00CFDBC7 /* main.m */,
 				1B3751391EB1D1CF00CFDBC7 /* AppDelegate.h */,
 				1B37513A1EB1D1CF00CFDBC7 /* AppDelegate.m */,
+				1B7C3BFC1EBA1995009A9251 /* updateTabbar.h */,
+				1B7C3BFD1EBA1995009A9251 /* updateTabbar.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		1B80EEA11EB9F79400D88C9E /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				1B80EEA21EB9F7B200D88C9E /* Controller */,
+				1B80EEA31EB9F7BF00D88C9E /* Model */,
+				1B80EEA41EB9F7C100D88C9E /* View */,
+			);
+			name = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		1B80EEA21EB9F7B200D88C9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B80EEAB1EBA019E00D88C9E /* SettingTableController.h */,
+				1B80EEAC1EBA019E00D88C9E /* SettingTableController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1B80EEA31EB9F7BF00D88C9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B80EEA51EB9F8A100D88C9E /* settingItem.h */,
+				1B80EEA61EB9F8A100D88C9E /* settingItem.m */,
+				1B80EEA81EB9F8B300D88C9E /* settingGroup.h */,
+				1B80EEA91EB9F8B300D88C9E /* settingGroup.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1B80EEA41EB9F7C100D88C9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B7C3BFF1EBA204B009A9251 /* settingViewCell.h */,
+				1B7C3C001EBA204B009A9251 /* settingViewCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		1B9940EC1EB484FC00622024 /* Active */ = {
@@ -522,19 +584,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B738FDB1EB1E3AC00FE6812 /* TabBar.m in Sources */,
+				1B7C3C011EBA204B009A9251 /* settingViewCell.m in Sources */,
+				1B80EEAD1EBA019E00D88C9E /* SettingTableController.m in Sources */,
 				1B9940E81EB464B600622024 /* LoginController.m in Sources */,
 				1B9940F21EB4855000622024 /* SubcategoryTableViewController.m in Sources */,
 				1B738FCF1EB1DEA800FE6812 /* DiscoverViewController.m in Sources */,
 				1B738FD21EB1DECE00FE6812 /* HallViewController.m in Sources */,
 				1B738FC91EB1DCD800FE6812 /* TabBarController.m in Sources */,
 				1B37513B1EB1D1CF00CFDBC7 /* AppDelegate.m in Sources */,
+				1B80EEA71EB9F8A100D88C9E /* settingItem.m in Sources */,
 				1B9940F71EB48E6F00622024 /* Category.m in Sources */,
 				1B738FD81EB1DF1600FE6812 /* MyLotteryViewController.m in Sources */,
+				1B80EEAA1EB9F8B300D88C9E /* settingGroup.m in Sources */,
 				1B738FCC1EB1DE7B00FE6812 /* ArenaViewController.m in Sources */,
 				1B738FDE1EB1EB5A00FE6812 /* NavigationController.m in Sources */,
 				1B9940EB1EB483DA00622024 /* ActiveController.m in Sources */,
 				1B9940EF1EB4853200622024 /* CategoryTableViewController.m in Sources */,
+				1B7C3BFE1EBA1995009A9251 /* updateTabbar.m in Sources */,
 				1B738FD51EB1DEEB00FE6812 /* HistoryViewController.m in Sources */,
+				1B80EE9F1EB9D19400D88C9E /* NewCollectionController.m in Sources */,
 				1B3751381EB1D1CF00CFDBC7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

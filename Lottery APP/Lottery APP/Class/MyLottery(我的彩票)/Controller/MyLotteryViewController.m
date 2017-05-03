@@ -8,6 +8,8 @@
 
 #import "MyLotteryViewController.h"
 #import "LoginController.h"
+#import "SettingTableController.h"
+
 
 @interface MyLotteryViewController ()
 
@@ -23,7 +25,9 @@
 #pragma mark 点击了设置
 -(void)clickSetting{
     
+    SettingTableController *setTvc = [[SettingTableController alloc] init];
     
+    [self.navigationController pushViewController:setTvc animated:YES];
 
 }
 

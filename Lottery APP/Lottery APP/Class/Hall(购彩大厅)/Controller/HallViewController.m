@@ -18,10 +18,13 @@
 
 #pragma mark 点击活动
 -(void)didActive{
+    
     ActiveController *active = [[ActiveController alloc] init];
+    
     [self.navigationController pushViewController:active animated:YES];
+    
+    
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,7 +35,6 @@
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(didActive)];
-    
     
     
     // Uncomment the following line to preserve selection between presentations.

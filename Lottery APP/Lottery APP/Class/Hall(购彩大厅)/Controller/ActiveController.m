@@ -11,15 +11,38 @@
 #import "CategoryTableViewController.h"
 #import "SubcategoryTableViewController.h"
 
+#import "updateTabbar.h"
+
+
 @interface ActiveController ()
 
 @end
 
+
 @implementation ActiveController
+
+
+//-(void) NavBack{
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [btn setImage:[UIImage imageNamed:@"NavBack"] forState:UIControlStateNormal];
+//    [btn sizeToFit];
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+//    
+//    [btn addTarget:self action:@selector(backtoHallview) forControlEvents:nil];
+//}
+//
+//-(void)backtoHallview{
+//    
+//}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    updateTabbar * uptab = [[updateTabbar alloc] init];
+    [uptab updateTabbar:self Withtitle:@"生活"];
+    
     
     CGFloat W = self.view.frame.size.width / 2;
     CGFloat H = self.view.frame.size.height;
@@ -43,14 +66,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
