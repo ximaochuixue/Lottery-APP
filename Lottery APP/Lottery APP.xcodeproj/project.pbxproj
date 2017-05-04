@@ -176,7 +176,7 @@
 				1B3751681EB1D2EC00CFDBC7 /* History(开奖信息) */,
 				1B37516C1EB1D2EC00CFDBC7 /* Main(主要) */,
 				1B3751701EB1D2EC00CFDBC7 /* MyLottery(我的彩票) */,
-				1B3751741EB1D2EC00CFDBC7 /* NewFeature(新特性界面) */,
+				1B3751741EB1D2EC00CFDBC7 /* NewFeature(界面) */,
 				1B3751781EB1D2EC00CFDBC7 /* Other */,
 			);
 			path = Class;
@@ -389,13 +389,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		1B3751741EB1D2EC00CFDBC7 /* NewFeature(新特性界面) */ = {
+		1B3751741EB1D2EC00CFDBC7 /* NewFeature(界面) */ = {
 			isa = PBXGroup;
 			children = (
 				1B3751751EB1D2EC00CFDBC7 /* Controller */,
 				1B3751761EB1D2EC00CFDBC7 /* Model */,
 				1B3751771EB1D2EC00CFDBC7 /* View */,
 			);
+			name = "NewFeature(界面)";
 			path = "NewFeature(新特性界面)";
 			sourceTree = "<group>";
 		};
@@ -427,14 +428,12 @@
 		1B3751781EB1D2EC00CFDBC7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				1BBD18B61EBB7140006543C9 /* Frame */,
+				1BBD18B51EBB712C006543C9 /* tabbar文字位移 */,
 				1B9940F31EB48DC600622024 /* categories.plist */,
 				1B3751371EB1D1CF00CFDBC7 /* main.m */,
 				1B3751391EB1D1CF00CFDBC7 /* AppDelegate.h */,
 				1B37513A1EB1D1CF00CFDBC7 /* AppDelegate.m */,
-				1B7C3BFC1EBA1995009A9251 /* updateTabbar.h */,
-				1B7C3BFD1EBA1995009A9251 /* updateTabbar.m */,
-				1BBD18B21EBB638F006543C9 /* UIView+Frame.h */,
-				1BBD18B31EBB638F006543C9 /* UIView+Frame.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -489,6 +488,24 @@
 				1B9940F61EB48E6F00622024 /* Category.m */,
 			);
 			name = Active;
+			sourceTree = "<group>";
+		};
+		1BBD18B51EBB712C006543C9 /* tabbar文字位移 */ = {
+			isa = PBXGroup;
+			children = (
+				1B7C3BFC1EBA1995009A9251 /* updateTabbar.h */,
+				1B7C3BFD1EBA1995009A9251 /* updateTabbar.m */,
+			);
+			name = "tabbar文字位移";
+			sourceTree = "<group>";
+		};
+		1BBD18B61EBB7140006543C9 /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				1BBD18B21EBB638F006543C9 /* UIView+Frame.h */,
+				1BBD18B31EBB638F006543C9 /* UIView+Frame.m */,
+			);
+			name = Frame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
