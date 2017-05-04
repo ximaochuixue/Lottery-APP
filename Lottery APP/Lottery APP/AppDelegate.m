@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TabBarController.h"
+#import "NewCollectionController.h"
 
 @interface AppDelegate ()
 
@@ -22,10 +23,13 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor blueColor];
     
-    TabBarController *tabbar = [[TabBarController alloc] init];
-
+//    TabBarController *tabbar = [[TabBarController alloc] init];
+//    self.window.rootViewController = tabbar;
     
-    self.window.rootViewController = tabbar;
+    
+    self.window.rootViewController = [[NewCollectionController alloc] init];
+    
+    
     [self.window makeKeyAndVisible];
     
     return YES;

@@ -32,7 +32,7 @@
 }
 
 -(void)setgroup{
-    settingItem *item = [settingItem initWithimage:[UIImage imageNamed:@"RedeemCode"] title:@"RedeemCode"];
+    settingItem *item = [settingItem initWithimage:[UIImage imageNamed:@"RedeemCode"] title:@"红包"];
     
     settingGroup *group = [settingGroup groupWithItem:@[item]];
     
@@ -82,6 +82,7 @@
     settingGroup *group = self.groups[indexPath.section];
     
     cell.item = group.items[indexPath.row];
+    
     
     return cell;
 }

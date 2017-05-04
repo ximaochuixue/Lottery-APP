@@ -8,13 +8,39 @@
 
 #import "NewCollectionController.h"
 
+#import "NewCollectionCell.h"
+#import "UIView+Frame.h"
+
 @interface NewCollectionController ()
+
+@property (nonatomic, assign) CGFloat lastOffsetX;
+
+@property (nonatomic, weak) UIImageView *guideView;
+
+@property (nonatomic, weak) UIImageView *guideLargetView;
+
+@property (nonatomic, weak) UIImageView *guideSmallView;
 
 @end
 
 @implementation NewCollectionController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"cell";
+
+-(instancetype)init{
+    UICollectionViewFlowLayout *viewLayout = [[UICollectionViewFlowLayout alloc] init];
+    
+    viewLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    
+    viewLayout.itemSize = [UIScreen mainScreen].bounds.size;
+    
+    viewLayout.minimumLineSpacing = 0;
+    
+    viewLayout.minimumInteritemSpacing = 0;
+    
+    return [super initWithCollectionViewLayout:viewLayout];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,10 +48,21 @@ static NSString * const reuseIdentifier = @"Cell";
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    self.collectionView.bounces = NO;
     
-    // Do any additional setup after loading the view.
+    self.collectionView.showsHorizontalScrollIndicator = NO;
+    
+    self.collectionView.pagingEnabled = YES;
+    
+    // Register cell classes
+    [self.collectionView registerClass:[NewCollectionCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    
+    
+    UIImageView *guideLine = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"guideLine"]];
+    guideLine.x -= 200;
+
+    [self.collectionView addSubview:guideLine];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,66 +70,34 @@ static NSString * const reuseIdentifier = @"Cell";
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+
+    return 4;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
+    NewCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    NSString *imagename = [NSString stringWithFormat:@"guide%ldBackground",indexPath.item + 1];
+    
+    cell.image = [UIImage imageNamed:imagename];
+    
+    [cell setupIndexPath:indexPath];
     
     return cell;
 }
 
-#pragma mark <UICollectionViewDelegate>
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end

@@ -32,6 +32,8 @@
 		1B9940F21EB4855000622024 /* SubcategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9940F11EB4855000622024 /* SubcategoryTableViewController.m */; };
 		1B9940F41EB48DC600622024 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B9940F31EB48DC600622024 /* categories.plist */; };
 		1B9940F71EB48E6F00622024 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9940F61EB48E6F00622024 /* Category.m */; };
+		1BBD18A91EBB2096006543C9 /* NewCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBD18A81EBB2096006543C9 /* NewCollectionCell.m */; };
+		1BBD18B41EBB638F006543C9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBD18B31EBB638F006543C9 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,10 @@
 		1B9940F31EB48DC600622024 /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = categories.plist; path = ../../categories.plist; sourceTree = "<group>"; };
 		1B9940F51EB48E6F00622024 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		1B9940F61EB48E6F00622024 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		1BBD18A71EBB2096006543C9 /* NewCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCollectionCell.h; sourceTree = "<group>"; };
+		1BBD18A81EBB2096006543C9 /* NewCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCollectionCell.m; sourceTree = "<group>"; };
+		1BBD18B21EBB638F006543C9 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		1BBD18B31EBB638F006543C9 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -412,6 +418,8 @@
 		1B3751771EB1D2EC00CFDBC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1BBD18A71EBB2096006543C9 /* NewCollectionCell.h */,
+				1BBD18A81EBB2096006543C9 /* NewCollectionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -425,6 +433,8 @@
 				1B37513A1EB1D1CF00CFDBC7 /* AppDelegate.m */,
 				1B7C3BFC1EBA1995009A9251 /* updateTabbar.h */,
 				1B7C3BFD1EBA1995009A9251 /* updateTabbar.m */,
+				1BBD18B21EBB638F006543C9 /* UIView+Frame.h */,
+				1BBD18B31EBB638F006543C9 /* UIView+Frame.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -584,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B738FDB1EB1E3AC00FE6812 /* TabBar.m in Sources */,
+				1BBD18B41EBB638F006543C9 /* UIView+Frame.m in Sources */,
 				1B7C3C011EBA204B009A9251 /* settingViewCell.m in Sources */,
 				1B80EEAD1EBA019E00D88C9E /* SettingTableController.m in Sources */,
 				1B9940E81EB464B600622024 /* LoginController.m in Sources */,
@@ -601,6 +612,7 @@
 				1B9940EB1EB483DA00622024 /* ActiveController.m in Sources */,
 				1B9940EF1EB4853200622024 /* CategoryTableViewController.m in Sources */,
 				1B7C3BFE1EBA1995009A9251 /* updateTabbar.m in Sources */,
+				1BBD18A91EBB2096006543C9 /* NewCollectionCell.m in Sources */,
 				1B738FD51EB1DEEB00FE6812 /* HistoryViewController.m in Sources */,
 				1B80EE9F1EB9D19400D88C9E /* NewCollectionController.m in Sources */,
 				1B3751381EB1D1CF00CFDBC7 /* main.m in Sources */,
