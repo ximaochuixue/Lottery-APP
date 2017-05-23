@@ -8,6 +8,8 @@
 
 #import "ArenaViewController.h"
 
+//#import "HomeViewController.h"
+
 @interface ArenaViewController ()
 
 @end
@@ -16,7 +18,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+//    HomeViewController *homeVc = [[HomeViewController alloc] init];
+//    [self.navigationController pushViewController:homeVc animated:YES];
+    
+//    HomeViewController *homeVc = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:[NSBundle mainBundle]];
+//    [self.view addSubview:homeVc.view];
+    
+//    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    
+//    scrollView.contentSize = CGSizeMake(6 * [UIScreen mainScreen].bounds.size.width, 0);
+//    
+//    scrollView.backgroundColor = [UIColor redColor];
+//    
+//    [self.view addSubview:scrollView];
+    
+   
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +42,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

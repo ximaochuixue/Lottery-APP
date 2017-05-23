@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="ContentScrollerView" destination="Dga-ji-5eF" id="1qy-p7-yeS"/>
+                <outlet property="TitleScrollerView" destination="3n3-nJ-0Gz" id="N5g-lL-rFt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dga-ji-5eF" userLabel="Content">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3n3-nJ-0Gz" userLabel="Title">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="2Gd-GA-ENB"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3n3-nJ-0Gz" secondAttribute="trailing" id="Cyu-Nv-DfV"/>
+                <constraint firstItem="3n3-nJ-0Gz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NHw-3J-NAt"/>
+                <constraint firstItem="3n3-nJ-0Gz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QNm-XS-2KP"/>
+                <constraint firstItem="Dga-ji-5eF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TaH-ZC-PY4"/>
+                <constraint firstAttribute="trailing" secondItem="Dga-ji-5eF" secondAttribute="trailing" id="Tro-xH-WMx"/>
+                <constraint firstAttribute="bottom" secondItem="Dga-ji-5eF" secondAttribute="bottom" id="mKS-sz-mwT"/>
+                <constraint firstItem="Dga-ji-5eF" firstAttribute="top" secondItem="3n3-nJ-0Gz" secondAttribute="bottom" id="ujT-7p-BCS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-72" y="-62"/>
+        </view>
+    </objects>
+</document>

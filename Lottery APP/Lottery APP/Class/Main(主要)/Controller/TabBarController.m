@@ -17,6 +17,8 @@
 #import "MyLotteryViewController.h"
 #import "NavigationController.h"
 
+#import "HomeViewController.h"
+
 @interface TabBarController ()<TabBarDelegate>
 
 @property(nonatomic,strong) NSMutableArray *items;
@@ -49,7 +51,7 @@
     HallViewController *hall = [[HallViewController alloc] init];
     [self setUponechildViewController:hall image:[UIImage imageNamed:@"TabBar_LotteryHall_new"] selImage:[UIImage imageNamed:@"TabBar_LotteryHall_selected_new"]];
     
-    ArenaViewController *arena = [[ArenaViewController alloc] init];
+    HomeViewController *arena = [[HomeViewController alloc] init];
     [self setUponechildViewController:arena image:[UIImage imageNamed:@"TabBar_Arena_new"] selImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"]];
     
     DiscoverViewController *discover = [[DiscoverViewController alloc] init];
