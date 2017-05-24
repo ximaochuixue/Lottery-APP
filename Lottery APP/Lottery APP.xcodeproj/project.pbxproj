@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0276A11ED5636800DB663E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B0276A01ED5636800DB663E /* HomeViewController.xib */; };
 		1B3751381EB1D1CF00CFDBC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3751371EB1D1CF00CFDBC7 /* main.m */; };
 		1B37513B1EB1D1CF00CFDBC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B37513A1EB1D1CF00CFDBC7 /* AppDelegate.m */; };
 		1B3751431EB1D1CF00CFDBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3751421EB1D1CF00CFDBC7 /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		1B3751511EB1D1CF00CFDBC7 /* Lottery_APPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3751501EB1D1CF00CFDBC7 /* Lottery_APPUITests.m */; };
 		1B5759311EC589A8005B4A5C /* SocialTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5759301EC589A8005B4A5C /* SocialTableController.m */; };
 		1B57593B1EC59C0C005B4A5C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5759391EC59C0C005B4A5C /* HomeViewController.m */; };
-		1B57593C1EC59C0C005B4A5C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B57593A1EC59C0C005B4A5C /* HomeViewController.xib */; };
 		1B57593F1EC5A145005B4A5C /* topLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B57593E1EC5A145005B4A5C /* topLable.m */; };
 		1B738FC91EB1DCD800FE6812 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FC81EB1DCD800FE6812 /* TabBarController.m */; };
 		1B738FCC1EB1DE7B00FE6812 /* ArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738FCB1EB1DE7B00FE6812 /* ArenaViewController.m */; };
@@ -51,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B0276A01ED5636800DB663E /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		1B3751331EB1D1CF00CFDBC7 /* Lottery APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lottery APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3751371EB1D1CF00CFDBC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		1B3751391EB1D1CF00CFDBC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -65,7 +66,6 @@
 		1B5759301EC589A8005B4A5C /* SocialTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialTableController.m; sourceTree = "<group>"; };
 		1B5759381EC59C0C005B4A5C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		1B5759391EC59C0C005B4A5C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		1B57593A1EC59C0C005B4A5C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		1B57593D1EC5A145005B4A5C /* topLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topLable.h; sourceTree = "<group>"; };
 		1B57593E1EC5A145005B4A5C /* topLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = topLable.m; sourceTree = "<group>"; };
 		1B738FC71EB1DCD800FE6812 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 				1B5759301EC589A8005B4A5C /* SocialTableController.m */,
 				1B5759381EC59C0C005B4A5C /* HomeViewController.h */,
 				1B5759391EC59C0C005B4A5C /* HomeViewController.m */,
-				1B57593A1EC59C0C005B4A5C /* HomeViewController.xib */,
+				1B0276A01ED5636800DB663E /* HomeViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -609,8 +609,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B3751461EB1D1CF00CFDBC7 /* LaunchScreen.storyboard in Resources */,
-				1B57593C1EC59C0C005B4A5C /* HomeViewController.xib in Resources */,
 				1B3751431EB1D1CF00CFDBC7 /* Assets.xcassets in Resources */,
+				1B0276A11ED5636800DB663E /* HomeViewController.xib in Resources */,
 				1B9940F41EB48DC600622024 /* categories.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

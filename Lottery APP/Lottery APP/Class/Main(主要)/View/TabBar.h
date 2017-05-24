@@ -13,7 +13,7 @@
 @protocol TabBarDelegate <NSObject>
 
 @optional
--(void)tabBar:(TabBar *)tabBar didClickBtn:(NSInteger)index;
+- (void)tabBar:(TabBar *)tabBar didClickBtn:(NSInteger)index;
 
 @end
 

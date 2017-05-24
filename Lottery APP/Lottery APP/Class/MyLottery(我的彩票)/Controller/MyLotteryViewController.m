@@ -18,12 +18,12 @@
 @implementation MyLotteryViewController
 
 #pragma mark 点击了客服
--(void) clickFBMM{
+- (void)clickFBMM{
     
 }
 
 #pragma mark 点击了设置
--(void)clickSetting{
+- (void)clickSetting{
     
     SettingTableController *setTvc = [[SettingTableController alloc] init];
     
@@ -32,7 +32,7 @@
 }
 
 #pragma mark 设置self.view
--(void) setView{
+- (void)setView{
     
     UIImageView *backgroundView = [[UIImageView alloc] init];
     backgroundView.image = [UIImage imageNamed:@"LoginScreen"];

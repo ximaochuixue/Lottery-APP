@@ -27,7 +27,7 @@
 
 static NSString * const reuseIdentifier = @"cell";
 
--(instancetype)init{
+- (instancetype)init{
     UICollectionViewFlowLayout *viewLayout = [[UICollectionViewFlowLayout alloc] init];
     
     viewLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;

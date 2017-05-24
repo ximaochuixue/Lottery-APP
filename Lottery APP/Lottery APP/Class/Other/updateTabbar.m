@@ -12,7 +12,7 @@
 
 
 
--(void) updateTabbar:(UIViewController *)vc Withtitle:(NSString *)title{
+- (void)updateTabbar:(UIViewController *)vc Withtitle:(NSString *)title{
     
     vc.title = title;
     

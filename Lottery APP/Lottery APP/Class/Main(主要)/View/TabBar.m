@@ -18,7 +18,7 @@
 @implementation TabBar
 
 
--(void)setItems:(NSArray *)items{
+- (void)setItems:(NSArray *)items{
     
     _items = items;
     
@@ -43,7 +43,7 @@
     }
 }
 
--(void)btnClick:(UIButton *)button{
+- (void)btnClick:(UIButton *)button{
     _selButton.selected = NO;
     
     button.selected = YES;
@@ -57,7 +57,7 @@
     }
 }
 
--(void) layoutSubviews{
+- (void)layoutSubviews{
     [super layoutSubviews];
     
     NSInteger count = self.subviews.count;

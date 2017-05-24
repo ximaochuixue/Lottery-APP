@@ -17,6 +17,6 @@
 
 @property (nonatomic,strong) NSString *footTitle;
 
-+(instancetype)groupWithItem:(NSArray *)items;
++(instancetype) groupWithItem:(NSArray *)items;
 
 @end

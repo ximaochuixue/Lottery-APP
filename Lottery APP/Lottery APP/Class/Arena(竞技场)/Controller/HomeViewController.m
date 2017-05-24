@@ -37,7 +37,7 @@ static NSInteger num = 8;
 }
 
 
--(void)setUpAllChildVc{
+- (void)setUpAllChildVc{
     
     SocialTableController *social1 = [[SocialTableController alloc] init];
     social1.title = @"一号";
@@ -73,7 +73,7 @@ static NSInteger num = 8;
 }
 
 
--(void) setUpTitle{
+- (void)setUpTitle{
     
     CGFloat labelW = 100;
     CGFloat labelY = 0;

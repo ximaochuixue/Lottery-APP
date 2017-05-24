@@ -16,6 +16,6 @@
 
 @property (nonatomic,strong) UIButton *startBtn;
 
--(void)setupIndexPath:(NSIndexPath *)indexPath;
+- (void)setupIndexPath:(NSIndexPath *)indexPath;
 
 @end

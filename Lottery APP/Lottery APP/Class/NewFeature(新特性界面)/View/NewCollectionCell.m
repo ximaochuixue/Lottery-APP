@@ -13,7 +13,7 @@
 @implementation NewCollectionCell
 
 
--(UIButton *)startBtn{
+- (UIButton *)startBtn{
     if (_startBtn == nil) {
         
         _startBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -33,7 +33,7 @@
     return _startBtn;
 }
 
--(UIImageView *)imageView{
+- (UIImageView *)imageView{
     if (_imageView == nil) {
         
         UIImageView *imageV = [[UIImageView alloc] initWithFrame:self.bounds];
@@ -53,7 +53,7 @@
 }
 
 
--(void)setupIndexPath:(NSIndexPath *)indexPath {
+- (void)setupIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.row == 3 ) {
         self.startBtn.hidden = NO;
@@ -62,7 +62,7 @@
     }
 }
 
--(void)click{
+- (void)click{
     
     [UIApplication sharedApplication].keyWindow.rootViewController = [[TabBarController alloc] init];
 }

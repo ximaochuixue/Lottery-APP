@@ -12,9 +12,6 @@
 
 @interface settingViewCell : UITableViewCell
 
-+(instancetype)cellWithTableView:(UITableView *)tableview;
-
-
 @property (nonatomic,strong) settingItem *item;
 
 @end

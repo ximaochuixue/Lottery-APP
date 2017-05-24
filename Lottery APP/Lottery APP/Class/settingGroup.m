@@ -10,7 +10,7 @@
 
 @implementation settingGroup
 
-+(instancetype)groupWithItem:(NSArray *)items{
++(instancetype) groupWithItem:(NSArray *)items{
     
     settingGroup *group = [[self alloc] init];
     group.items = items;

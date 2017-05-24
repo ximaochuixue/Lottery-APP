@@ -10,6 +10,6 @@
 
 @interface updateTabbar : UIView
 
--(void) updateTabbar:(UIViewController *)vc Withtitle:(NSString *)title;
+- (void)updateTabbar:(UIViewController *)vc Withtitle:(NSString *)title;
 
 @end

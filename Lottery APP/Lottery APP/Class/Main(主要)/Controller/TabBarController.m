@@ -27,7 +27,7 @@
 
 @implementation TabBarController
 
--(NSMutableArray *)items{
+- (NSMutableArray *)items{
     if (_items==nil) {
         _items =[NSMutableArray array];
     }
@@ -47,7 +47,7 @@
     // Do any additional setup after loading the view.
 }
 
--(void) setUpAllChildViewController{
+- (void)setUpAllChildViewController{
     HallViewController *hall = [[HallViewController alloc] init];
     [self setUponechildViewController:hall image:[UIImage imageNamed:@"TabBar_LotteryHall_new"] selImage:[UIImage imageNamed:@"TabBar_LotteryHall_selected_new"]];
     
@@ -65,7 +65,7 @@
     
 }
 
--(void) setUponechildViewController:(UIViewController *)vc image:(UIImage *)image selImage:(UIImage *)selImage{
+- (void)setUponechildViewController:(UIViewController *)vc image:(UIImage *)image selImage:(UIImage *)selImage{
     vc.tabBarItem.image = image;
     vc.tabBarItem.selectedImage = selImage;
     
@@ -79,7 +79,7 @@
 }
 
 
--(void)setUpTabBar{
+- (void)setUpTabBar{
     
     [self.tabBar removeFromSuperview];
     
@@ -97,7 +97,7 @@
 -(void)tabBar:(TabBar *)tabBar didClickBtn:(NSInteger)index{
     
     self.selectedIndex = index;
-//    NSLog(@"%ld",index);
+
 }
 
 
@@ -109,14 +109,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

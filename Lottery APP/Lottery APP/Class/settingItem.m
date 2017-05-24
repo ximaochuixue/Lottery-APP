@@ -10,7 +10,7 @@
 
 @implementation settingItem
 
-+(instancetype)initWithimage:(UIImage *)image title:(NSString *)title{
++(instancetype) initWithimage:(UIImage *)image title:(NSString *)title{
     
     settingItem *item = [[self alloc] init];
     

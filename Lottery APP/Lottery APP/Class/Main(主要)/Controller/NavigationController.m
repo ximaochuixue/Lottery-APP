@@ -15,7 +15,7 @@
 @implementation NavigationController
 
 
-+(void)initialize{
++ (void)initialize{
     UINavigationBar *bar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[UIView class]]];
     
     [bar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
